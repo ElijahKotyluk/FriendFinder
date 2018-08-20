@@ -7,12 +7,12 @@ const friends = require('../data/friends.js');
 module.exports = (app) => {
 
     // Total list of friend entries
-    app.get('/api/friends', = (req, res) => {
+    app.get('/api/friends', (req, res) => {
         res.json(friends);
     });
 
     // Add new friend entry
-    app.post('/api/friends' = (req, res) => {
+    app.post('/api/friends', (req, res) => {
         let userInput = req.body;
 
         let userResponses = userInput.scores;

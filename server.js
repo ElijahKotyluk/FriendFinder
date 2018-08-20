@@ -22,6 +22,6 @@ require(path.join(__dirname, './app/routing/apiRoutes'))(app);
 require(path.join(__dirname, './app/routing/htmlRoutes'))(app);
 
 // Port listener.
-app.listen(PORT, function () {
+app.listen(PORT, () => {
     console.log('Friend Finder app is listening on PORT: ' + PORT);
 });
